@@ -1,0 +1,36 @@
+<mvc:View controllerName="com.sap.project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content >
+<f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			ariaLabelledBy="Title1" >
+    <Label text="supplier"></Label>
+    <Input id="supplier" ></Input>
+    <Label text="order no"></Label>
+    <Input id="order"></Input>
+    <Label text="amount"></Label>
+    <Input id="amount"></Input>
+    </f:SimpleForm>
+    <Button text="WF" press="onWF"></Button>
+
+        </content>
+
+    </Page>
+</mvc:View>
